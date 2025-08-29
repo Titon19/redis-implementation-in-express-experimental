@@ -1,7 +1,6 @@
-# 🚀 Express Starter Pack
+# 🚀 Redis Implementation Experimental Read Data
 
-Starter pack profesional untuk membangun backend menggunakan **Express.js** dengan **TypeScript**.  
-Dilengkapi dengan tools modern seperti **nodemon**, **ESLint**, **Prettier**, dan **Pino** untuk logging.
+Trying to caching data using ioredis npm, the result is very fast than just get data from database before.
 
 ---
 
@@ -9,10 +8,8 @@ Dilengkapi dengan tools modern seperti **nodemon**, **ESLint**, **Prettier**, da
 
 - ⚡ Express.js v5 dengan TypeScript
 - 📦 Nodemon untuk hot-reload saat development
-- 🔐 Helmet untuk keamanan dasar HTTP headers
-- 🌍 CORS support
+- 📦 Ioredis
 - 📝 Pino + pino-http + pino-pretty untuk logging cepat & rapi
-- ✅ Validasi input dengan Zod
 - 🎨 ESLint + Prettier untuk konsistensi kode
 
 ---
@@ -22,7 +19,7 @@ Dilengkapi dengan tools modern seperti **nodemon**, **ESLint**, **Prettier**, da
 Clone repository dan install dependencies:
 
 ```bash
-git clone https://github.com/Titon19/express-starter-pack.git
-cd express-starter-pack
+git clone https://github.com/Titon19/redis-implementation-in-express-experimental.git
+cd (directory project)
 npm install
 ```
