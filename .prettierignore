@@ -1,0 +1,129 @@
+# =============================================================================
+# PRETTIER IGNORE CONFIGURATION (ENTERPRISE SCALE)
+#
+# Tujuan file ini adalah untuk memberitahu Prettier file dan direktori mana
+# yang HARUS DIABAIKAN. Ini penting untuk kecepatan dan stabilitas.
+# Syntax-nya sama seperti .gitignore.
+# =============================================================================
+
+# ---------------------------------
+# Dependensi & Package Manager
+# ---------------------------------
+# Direktori ini berisi ribuan file yang tidak perlu diformat.
+# Ini adalah optimasi performa yang paling penting.
+/node_modules
+/bower_components
+/vendor
+/vendors
+
+# File lock dibuat oleh package manager dan tidak boleh diubah secara manual.
+# Memformatnya bisa merusak integritas dependensi.
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+composer.lock
+
+# ---------------------------------
+# Folder Hasil Build & Kompilasi
+# ---------------------------------
+# File di dalam direktori ini adalah hasil kompilasi/transpilasi dari kode sumber.
+# Mereka akan dibuat ulang setiap kali proses build berjalan.
+/build
+/dist
+/out
+/public
+/target
+/coverage
+/reports
+
+# Direktori spesifik framework
+/.next/
+/.nuxt/
+/.svelte-kit/
+/.vercel/
+/.serverless/
+
+# ---------------------------------
+# File Log, Cache, dan Temporary
+# ---------------------------------
+# File-file ini bersifat sementara dan tidak relevan untuk diformat.
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache dari berbagai tools
+.npm
+.yarn-cache
+.eslint-cache
+.prettier-cache
+.stylelint-cache
+.cache
+.vite-cache
+.parcel-cache
+
+# ---------------------------------
+# File Sistem Operasi & Editor/IDE
+# ---------------------------------
+# File metadata yang dibuat oleh sistem operasi atau editor.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/ # Hapus baris ini jika Anda ingin membagikan setting (settings.json) yang terformat.
+*.swp
+*.swo
+
+# ---------------------------------
+# Environment Variables
+# ---------------------------------
+# File environment seringkali memiliki sintaks spesifik dan berisi data sensitif.
+.env
+.env.*
+!.env.example # Biarkan file contoh diformat agar mudah dibaca.
+
+# ---------------------------------
+# File yang Dihasilkan Otomatis (Auto-generated)
+# ---------------------------------
+# Misalnya, changelog yang dibuat oleh conventional-changelog.
+CHANGELOG.md
+CHANGELOG.txt
+
+# File-file yang sudah diminifikasi (minified).
+*.min.js
+*.min.css
+
+# ---------------------------------
+# Aset & Data
+# ---------------------------------
+# File biner, gambar, font, atau data-data besar.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.ico
+*.svg
+*.eot
+*.ttf
+*.woff
+*.woff2
+*.zip
+*.gz
+*.pdf
+*.csv
+*.sql
+*.sqlite
+
+# ---------------------------------
+# Proyek Spesifik (Contoh)
+# ---------------------------------
+# Tambahkan di sini folder atau file spesifik untuk proyek Anda.
+# Misalnya, kode legacy yang tidak ingin Anda sentuh.
+/legacy-code/
+/third-party-libs/
+
+# Atau direktori upload
+/uploads/
+
+# Template HTML dari email atau CMS yang mungkin rusak jika diformat
+/templates/mail/
