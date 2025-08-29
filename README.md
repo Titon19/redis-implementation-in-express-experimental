@@ -8,7 +8,7 @@ Trying to caching data using ioredis npm, the result is very fast than just get 
 
 - ⚡ Express.js v5 dengan TypeScript
 - 📦 Nodemon untuk hot-reload saat development
-- 📦 Ioredis
+- 📦 Ioredis, Prisma in PostgreSQL
 - 📝 Pino + pino-http + pino-pretty untuk logging cepat & rapi
 - 🎨 ESLint + Prettier untuk konsistensi kode
 
